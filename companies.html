@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Companies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h2>🎓 Campus<span>Connect</span></h2>
+
+    <nav>
+        <a href="companies.html">All Companies</a>
+        <a href="drives.html">Drives</a>
+        <a href="code.html">Home</a>
+        <a href="applications.html">Applications</a>
+        <a href="profile.html">My Profile</a>
+        <div class="company-search-wrap">
+            <input type="text" id="companySearch" placeholder="Search company name / position..." aria-label="Search companies by name or position">
+        </div>
+    </nav>
+
+</header>
+
+
+<section class="dashboard">
+
+    <div class="company-header-block">
+        <h1>🏢 Companies</h1>
+    </div>
+
+    <div class="top-companies-banner">
+        <h3>Explore top companies and find your dream job.</h3>
+    </div>
+
+    <div class="cards company-list">
+
+        <div class="card company-card">
+            <div class="company-brand">
+                <span class="company-logo tcs">T</span>
+                <div>
+                    <h2>TCS</h2>
+                    <small>Software Engineer</small>
+                </div>
+            </div>
+            <p>Package: 6-12 LPA</p>
+            <p>Location: Noida</p>
+            <button onclick="viewCompanyDetails('TCS', 'Software Engineer', '6-12 LPA', 'Noida', 'C, Java, Data Structures, SQL', 'CGPA 6.5+ and eligible branches: CSE, IT, ECE')">View Details</button>
+        </div>
+
+        <div class="card company-card">
+            <div class="company-brand">
+                <span class="company-logo infosys">I</span>
+                <div>
+                    <h2>Infosys</h2>
+                    <small>System Engineer</small>
+                </div>
+            </div>
+            <p>Package: 5-10 LPA</p>
+            <p>Location: Bangalore</p>
+            <button onclick="viewCompanyDetails('Infosys', 'System Engineer', '5-10 LPA', 'Bangalore', 'Java, Python, OOPs, DBMS', 'CGPA 6.0+ and eligible branches: CSE, IT, ECE')">View Details</button>
+        </div>
+
+        <div class="card company-card">
+            <div class="company-brand">
+                <span class="company-logo wipro">W</span>
+                <div>
+                    <h2>Wipro</h2>
+                    <small>IT Services</small>
+                </div>
+            </div>
+            <p>Package: 4-9 LPA</p>
+            <p>Location: Gurgaon</p>
+            <button onclick="viewCompanyDetails('Wipro', 'IT Services', '4-9 LPA', 'Gurgaon', 'Python, C, HTML, CSS, Excel', 'CGPA 6.0+ and eligible branches: CSE, IT, ECE')">View Details</button>
+        </div>
+
+        <div class="card company-card">
+            <div class="company-brand">
+                <span class="company-logo microsoft">M</span>
+                <div>
+                    <h2>Microsoft</h2>
+                    <small>Product Engineer</small>
+                </div>
+            </div>
+            <p>Package: 12-25 LPA</p>
+            <p>Location: Hyderabad</p>
+            <button onclick="viewCompanyDetails('Microsoft', 'Product Engineer', '12-25 LPA', 'Hyderabad', 'C++, DSA, System Design, Cloud Computing', 'CGPA 8.0+ and eligible branches: CSE, IT, ECE', 'Coming soon')">View Details</button>
+        </div>
+
+        <div class="card company-card">
+            <div class="company-brand">
+                <span class="company-logo google">G</span>
+                <div>
+                    <h2>Google</h2>
+                    <small>SDE Intern</small>
+                </div>
+            </div>
+            <p>Package: 18-30 LPA</p>
+            <p>Location: Bangalore</p>
+            <button onclick="viewCompanyDetails('Google', 'SDE Intern', '18-30 LPA', 'Bangalore', 'DSA, C++, Java, System Design', 'CGPA 8.0+ and eligible branches: CSE, IT, ECE', 'Interview ongoing')">View Details</button>
+        </div>
+
+    </div>
+
+    <div id="admin-added-companies" class="cards company-list" aria-live="polite"></div>
+
+    <div id="company-details-panel" class="company-details-panel hidden" aria-live="polite"></div>
+
+</section>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

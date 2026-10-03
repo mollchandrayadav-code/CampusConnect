@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h2>🎓 Campus<span>Connect</span></h2>
+
+    <nav>
+        <a href="code.html">Home</a>
+        <a href="profile.html">My Profile</a>
+        <button onclick="logout()">Logout</button>
+    </nav>
+
+</header>
+
+
+<section class="dashboard">
+
+    <h1>Welcome, Student 👋</h1>
+    <p>Here's your placement journey at a glance.</p>
+
+    <div class="mini-stats-row">
+        <div class="mini-stat-card blue">
+            <span class="mini-stat-icon" aria-hidden="true">👤</span>
+            <div>
+                <strong>80%</strong>
+                <small>Profile Completion</small>
+            </div>
+        </div>
+        <div class="mini-stat-card purple">
+            <span class="mini-stat-icon" aria-hidden="true">📄</span>
+            <div>
+                <strong>5</strong>
+                <small>Applied</small>
+            </div>
+        </div>
+        <div class="mini-stat-card orange">
+            <span class="mini-stat-icon" aria-hidden="true">✅</span>
+            <div>
+                <strong>1</strong>
+                <small>Shortlisted</small>
+            </div>
+        </div>
+        <div class="mini-stat-card green">
+            <span class="mini-stat-icon" aria-hidden="true">🎤</span>
+            <div>
+                <strong>1</strong>
+                <small>Interview</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="dashboard-lower-grid">
+        <div class="section-box upcoming-drives-box">
+            <div class="applications-header-main">
+                <h2>Upcoming Placement Drives</h2>
+                <a href="drives.html">View all</a>
+            </div>
+            <div class="upcoming-drives-list">
+                <a class="upcoming-drive-item" href="drives.html">
+                    <span class="company-logo tcs" aria-hidden="true">T</span>
+                    <span class="upcoming-drive-details">
+                        <strong>TCS</strong>
+                        <small>Software Engineer</small>
+                        <small class="upcoming-drive-date">📅 1 October 2026</small>
+                    </span>
+                </a>
+                <a class="upcoming-drive-item" href="drives.html">
+                    <span class="company-logo infosys" aria-hidden="true">I</span>
+                    <span class="upcoming-drive-details">
+                        <strong>Infosys</strong>
+                        <small>System Engineer</small>
+                        <small class="upcoming-drive-date">📅 5 October 2026</small>
+                    </span>
+                </a>
+                <a class="upcoming-drive-item" href="drives.html">
+                    <span class="company-logo wipro" aria-hidden="true">W</span>
+                    <span class="upcoming-drive-details">
+                        <strong>Wipro</strong>
+                        <small>IT Services</small>
+                        <small class="upcoming-drive-date">📅 1 October 2026</small>
+                    </span>
+                </a>
+                <a class="upcoming-drive-item" href="drives.html">
+                    <span class="company-logo microsoft" aria-hidden="true">M</span>
+                    <span class="upcoming-drive-details">
+                        <strong>Microsoft</strong>
+                        <small>Product Engineer</small>
+                        <small class="upcoming-drive-date">📅 15 October 2026</small>
+                    </span>
+                </a>
+            </div>
+        </div>
+
+        <div class="section-box">
+            <div class="applications-header-main">
+                <h2>My recent applications</h2>
+                <a href="applications.html">View all</a>
+            </div>
+            <div class="applications-table-wrap">
+                <table class="applications-table">
+                    <thead>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Company</th>
+                            <th>Role</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="recent-applications-table-body">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="section-box quick-actions-box">
+            <h2>Quick Actions</h2>
+            <div class="quick-actions-list">
+                <a class="quick-action-link" href="companies.html">
+                    <span class="quick-action-icon" aria-hidden="true">🏢</span>
+                    <span>Explore Companies</span>
+                    <span class="quick-action-arrow" aria-hidden="true">→</span>
+                </a>
+                <a class="quick-action-link" href="drives.html">
+                    <span class="quick-action-icon" aria-hidden="true">📢</span>
+                    <span>View Drives</span>
+                    <span class="quick-action-arrow" aria-hidden="true">→</span>
+                </a>
+                <a class="quick-action-link" href="profile.html">
+                    <span class="quick-action-icon" aria-hidden="true">👤</span>
+                    <span>Update Profile</span>
+                    <span class="quick-action-arrow" aria-hidden="true">→</span>
+                </a>
+                <a class="quick-action-link" href="notifications.html">
+                    <span class="quick-action-icon" aria-hidden="true">🔔</span>
+                    <span>View Notifications</span>
+                    <span class="quick-action-arrow" aria-hidden="true">→</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

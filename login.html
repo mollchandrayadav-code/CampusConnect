@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CampusConnect Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+<header>
+    <h2>🎓 Campus<span>Connect</span></h2>
+    <a href="code.html">⌂ Home</a>
+</header>
+
+
+<div class="container">
+
+    <div class="welcome">
+
+        <p>WELCOME TO</p>
+
+        <h1>Campus<span>Connect</span></h1>
+
+        <h2>Your Gateway to a Brighter Future</h2>
+
+        <p>
+            Find placement opportunities, track applications
+            and connect with top companies.
+        </p>
+
+        <div class="features">
+            💼 Companies &nbsp;&nbsp;
+            📄 Placement Drives &nbsp;&nbsp;
+            📈 Track Applications
+        </div>
+
+    </div>
+
+
+    <div class="login-box">
+
+        <h2>Login to Your Account</h2>
+
+        <p class="role-label">Choose your role</p>
+
+        <div class="tabs">
+
+            <button type="button" onclick="setRole('student')">👤 Student</button>
+
+            <button type="button" onclick="setRole('admin')">🛡 Admin</button>
+
+        </div>
+
+
+        <label id="sid">Student ID</label>
+
+        <input
+            id="student"
+            type="text"
+            placeholder="Enter Student ID"
+        >
+
+
+        <label>Email</label>
+
+        <input
+            id="email"
+            type="email"
+            placeholder="Enter College Email"
+        >
+
+
+        <label>Password</label>
+
+        <input
+            id="password"
+            type="password"
+            placeholder="Enter Password"
+        >
+
+
+        <button class="login" onclick="loginUser()">
+            Login →
+        </button>
+
+
+        <p>Forgot Password?</p>
+
+        <p>
+            New Student?
+            <a href="register.html">Register</a>
+        </p>
+
+    </div>
+
+</div>
+
+
+<footer>
+    © 2026 CampusConnect | Student Placement Portal
+</footer>
+
+
+<script src="login.js"></script>
+
+</body>
+</html>

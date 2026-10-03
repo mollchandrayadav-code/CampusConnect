@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h2>🎓 Campus<span>Connect</span></h2>
+
+    <nav>
+        <a href="code.html">🏠 Home</a>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </nav>
+
+</header>
+
+
+<section class="dashboard">
+
+    <h1><span class="page-user-icon">👤</span> My Profile</h1>
+
+    <div class="profile-notice">
+        <p>Complete your profile to get better job recommendations.</p>
+    </div>
+
+    <div class="profile-summary">
+        <div class="completion-ring-wrap">
+            <div class="completion-ring" data-progress="80">
+                <div class="completion-ring-inner">
+                    <strong>80%</strong>
+                    <span>Complete</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="completion-meta">
+            <h2>Profile Completion</h2>
+            <div class="progress-track">
+                <div class="progress-fill" style="width: 80%;"></div>
+            </div>
+            <p>You're almost there! Add a few final details to unlock better job recommendations.</p>
+            <button class="edit-profile-btn" onclick="toggleProfileEditor()">
+                ✏ Edit Profile
+            </button>
+        </div>
+    </div>
+
+    <div class="edit-form-wrapper" id="edit-profile-panel" hidden>
+        <h2>Edit Profile</h2>
+        <div class="edit-grid">
+            <label>
+                <span>Name</span>
+                <input type="text" id="edit-name" value="ABC">
+            </label>
+            <label>
+                <span>Student ID</span>
+                <input type="text" id="edit-student-id" value="2610000">
+            </label>
+            <label>
+                <span>Branch</span>
+                <input type="text" id="edit-branch" value="Information Technology">
+            </label>
+            <label>
+                <span>Year</span>
+                <input type="text" id="edit-year" value="2nd Year">
+            </label>
+            <label>
+                <span>Email</span>
+                <input type="email" id="edit-email" value="student@college.edu">
+            </label>
+            <label>
+                <span>Skills</span>
+                <input type="text" id="edit-skills" value="C, Python, Java, HTML, CSS">
+            </label>
+        </div>
+        <div class="form-actions">
+            <button class="save-btn" onclick="saveProfileChanges()">Save Changes</button>
+            <button class="secondary-btn" onclick="toggleProfileEditor(false)">Cancel</button>
+        </div>
+    </div>
+
+    <div class="section-box checklist-box">
+        <h2>Profile Checklist</h2>
+        <ul class="profile-checklist">
+            <li><span class="check-icon">✓</span> Personal details</li>
+            <li><span class="check-icon">✓</span> Skills</li>
+            <li><span class="check-icon">✓</span> Education</li>
+            <li><span class="check-icon">✓</span> Resume</li>
+            <li><span class="check-icon">✓</span> LinkedIn profile</li>
+            <li><span class="empty-icon">○</span> GitHub profile</li>
+        </ul>
+    </div>
+
+    <div class="section-box" id="student-info-form">
+
+        <h2>Student Information</h2>
+
+        <p>
+            <b>Name:</b> <span id="profile-name">ABC</span>
+        </p>
+
+        <p>
+            <b>Student ID:</b> <span id="profile-student-id">2610000</span>
+        </p>
+
+        <p>
+            <b>Branch:</b> <span id="profile-branch">Information Technology</span>
+        </p>
+
+        <p>
+            <b>Year:</b> <span id="profile-year">2nd Year</span>
+        </p>
+
+        <p>
+            <b>Email:</b> <span id="profile-email">student@college.edu</span>
+        </p>
+
+        <p>
+            <b>Skills:</b> <span id="profile-skills">C, Python, Java, HTML, CSS</span>
+        </p>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    margin: 0;
+    background: #050d25;
+    color: white;
+}
+
+header {
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    background: #07183b;
+}
+
+header span, .welcome span {
+    color: #00bfff;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    min-height: 85vh;
+    padding: 60px 7%;
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    background: linear-gradient(135deg,#050d25,#09265c);
+}
+
+.welcome {
+    flex: 1;
+}
+
+.welcome p {
+    color: #aabbdc;
+    line-height: 1.6;
+}
+
+.welcome h1 {
+    font-size: 55px;
+    margin: 10px 0;
+}
+
+.welcome h2 {
+    color: #6c8cff;
+}
+
+.features {
+    margin-top: 30px;
+    color: #8ecbff;
+}
+
+.login-box {
+    width: 400px;
+    padding: 30px;
+    background: #071a40;
+    border: 1px solid #1676d2;
+    border-radius: 18px;
+}
+
+.login-box h2 {
+    text-align: center;
+}
+
+.tabs {
+    display: flex;
+    margin: 20px 0;
+}
+
+.tabs button {
+    width: 50%;
+    padding: 12px;
+    background: #102b5b;
+    color: white;
+    border: 1px solid #2865a8;
+    cursor: pointer;
+}
+
+label {
+    display: block;
+    margin: 12px 0 6px;
+}
+
+input {
+    width: 100%;
+    padding: 13px;
+    background: #0b2550;
+    border: 1px solid #2865a8;
+    border-radius: 7px;
+    color: white;
+}
+
+.login {
+    width: 100%;
+    margin-top: 20px;
+    padding: 13px;
+    border: 0;
+    border-radius: 8px;
+    background: linear-gradient(90deg,#603cff,#168cff);
+    color: white;
+    font-size: 16px;
+}
+
+.login-box p {
+    text-align: center;
+    color: #91a5c9;
+}
+
+.login-box a {
+    color: #5c8cff;
+}
+
+footer {
+    padding: 20px 7%;
+    text-align: center;
+    color: #8195bb;
+}

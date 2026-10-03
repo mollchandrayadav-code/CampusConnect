@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Applications</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h2>🎓 Campus<span>Connect</span></h2>
+
+    <nav>
+        <a href="companies.html">All Companies</a>
+        <a href="drives.html">Drives</a>
+        <a href="code.html">Home</a>
+        <a href="applications.html">Applications</a>
+        <a href="profile.html">My Profile</a>
+    </nav>
+
+    <button class="notification-btn" aria-label="Notifications" onclick="window.location.href='notifications.html'">🔔</button>
+
+</header>
+
+
+<section class="dashboard">
+
+    <div class="applications-header-block">
+        <div class="applications-header-main">
+            <div>
+                <h1><span class="page-user-icon">📝</span> My Applications</h1>
+                <p>Track the status of your applications and stay updated.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-box">
+        <div class="applications-table-wrap">
+            <table class="applications-table">
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Company</th>
+                        <th>Role</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="applications-table-body">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

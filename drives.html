@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Placement Drives</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h2>🎓 Campus<span>Connect</span></h2>
+
+    <nav>
+        <a href="companies.html">All Companies</a>
+        <a href="drives.html">Drives</a>
+        <a href="code.html">Home</a>
+        <a href="applications.html">Applications</a>
+        <a href="profile.html">My Profile</a>
+    </nav>
+
+</header>
+
+
+<section class="dashboard">
+
+    <h1>Placement Drives</h1>
+    <p>Dont miss your chance. Check out upcoming placement drives and their deadlines.</p>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="company-brand">
+                <span class="company-logo tcs">T</span>
+                <div>
+                    <h2>TCS</h2>
+                    <small>Software Engineer</small>
+                </div>
+            </div>
+            <p class="drive-date"><span class="date-icon">📅</span> 1 October 2026</p>
+            <button class="drive-apply-btn" onclick="apply('TCS Software Engineer')">Apply Now</button>
+        </div>
+
+        <div class="card">
+            <div class="company-brand">
+                <span class="company-logo infosys">I</span>
+                <div>
+                    <h2>Infosys</h2>
+                    <small>System Engineer</small>
+                </div>
+            </div>
+            <p class="drive-date"><span class="date-icon">📅</span> 5 October 2026</p>
+            <button class="drive-apply-btn" onclick="apply('Infosys System Engineer')">Apply Now</button>
+        </div>
+
+        <div class="card">
+            <div class="company-brand">
+                <span class="company-logo wipro">W</span>
+                <div>
+                    <h2>Wipro</h2>
+                    <small>IT Services</small>
+                </div>
+            </div>
+            <p class="drive-date"><span class="date-icon">📅</span> 1 October 2026</p>
+            <button class="drive-apply-btn" onclick="apply('Wipro IT Services')">Apply Now</button>
+        </div>
+
+        <div class="card">
+            <div class="company-brand">
+                <span class="company-logo microsoft">M</span>
+                <div>
+                    <h2>Microsoft</h2>
+                    <small>Product Engineer</small>
+                </div>
+            </div>
+            <p class="drive-date"><span class="date-icon">📅</span> 15 October 2026</p>
+            <button class="drive-apply-btn" onclick="apply('Microsoft Product Engineer')">Apply Now</button>
+        </div>
+
+    </div>
+
+    <div id="admin-added-drives" class="cards" aria-live="polite"></div>
+
+    <div class="upcoming-reminder">
+        <div class="reminder-icon">📌</div>
+        <div class="reminder-content">
+            <h3>Google Ongoing Placement Drive</h3>
+            <p>You have 1 interview scheduled tomorrow.</p>
+        </div>
+    </div>
+
+</section>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

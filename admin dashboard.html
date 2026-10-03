@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h2>🎓 Campus<span>Connect</span></h2>
+
+    <nav>
+        <a href="code.html" class="nav-home">Home</a>
+        <a href="profile.html">My Profile</a>
+        <button onclick="logout()">Logout</button>
+    </nav>
+
+</header>
+
+
+<section class="dashboard">
+
+    <h1>Admin Dashboard 🛡</h1>
+
+    <p>
+        Manage students, companies and placement drives.
+    </p>
+
+
+    <div class="cards">
+
+        <div class="card">
+            <h2>120+</h2>
+            <p>Total Students</p>
+        </div>
+
+        <div class="card">
+            <h2 id="admin-company-count">24</h2>
+            <p>Total Companies</p>
+        </div>
+
+        <div class="card">
+            <h2 id="admin-drive-count">5</h2>
+            <p>Active Drives</p>
+        </div>
+
+        <div class="card">
+            <h2>150</h2>
+            <p>Total Applications</p>
+        </div>
+
+    </div>
+
+
+    <div class="section-box">
+
+        <h2>Admin Controls</h2>
+
+        <button type="button" onclick="openAdminAction('add-company')">Add Company</button>
+
+        <button type="button" onclick="openAdminAction('create-drive')">Create Placement Drive</button>
+
+        <button type="button" onclick="window.location.href='applications.html'">View Applications</button>
+
+        <button type="button" onclick="openAdminAction('manage-students')">Manage Students</button>
+
+    </div>
+
+    <div class="admin-dashboard-lower-grid">
+        <div class="section-box">
+            <div class="applications-header-main">
+                <h2>Recent Applications</h2>
+                <a href="applications.html">View all</a>
+            </div>
+            <div class="applications-table-wrap">
+                <table class="applications-table">
+                    <thead>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Company</th>
+                            <th>Role</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="admin-recent-applications-table-body">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="section-box placement-statistics-box">
+            <h2>Placement Statistics</h2>
+            <div class="placement-statistics-list">
+                <div class="placement-stat-item">
+                    <div class="placement-stat-circle applications-stat"><span>150</span></div>
+                    <span>Total Applications</span>
+                </div>
+                <div class="placement-stat-item">
+                    <div class="placement-stat-circle companies-stat"><span>24</span></div>
+                    <span>Total Companies</span>
+                </div>
+                <div class="placement-stat-item">
+                    <div class="placement-stat-circle drives-stat"><span>5</span></div>
+                    <span>Active Drives</span>
+                </div>
+                <div class="placement-stat-item">
+                    <div class="placement-stat-circle shortlisted-stat"><span>1</span></div>
+                    <span>Shortlisted</span>
+                </div>
+                <div class="placement-stat-item">
+                    <div class="placement-stat-circle selected-stat"><span>1</span></div>
+                    <span>Selected</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<dialog id="admin-action-dialog" class="admin-action-dialog" aria-labelledby="admin-action-title">
+    <div class="admin-dialog-header">
+        <h2 id="admin-action-title"></h2>
+        <button type="button" class="admin-dialog-close" aria-label="Close" onclick="closeAdminAction()">&times;</button>
+    </div>
+    <div id="admin-action-content"></div>
+</dialog>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

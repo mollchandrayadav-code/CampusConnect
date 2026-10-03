@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CampusConnect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h2>🎓 CAMPUS<span>CONNECT</span></h2>
+
+    <nav>
+        <a href="companies.html">🏢 All Companies</a>
+        <a href="drives.html">📢 Placement Drives</a>
+        <a href="applications.html">📝 Applications</a>
+        <a href="code.html">🏡 Home</a>
+        <a href="login.html">🔐 Login</a>
+        <a href="#" class="profile-link" onclick="showDashboardChoice(); return false;"><span class="profile-circle">📊</span> Dashboard</a>
+        <a href="profile.html" class="profile-link"><span class="profile-circle">👤</span> My Profile</a>
+        <button class="notification-btn" aria-label="Notifications" onclick="window.location.href='notifications.html'">🔔</button>
+    </nav>
+</header>
+
+
+<section class="hero">
+    <div class="hero-layout">
+        <div class="hero-main">
+            <div class="welcome-banner">
+                <div class="welcome-text-wrap">
+                    <span class="welcome-icon">👋</span>
+                    <span>Welcome back, Student</span>
+                </div>
+                <p class="career-note">Your career journey matters — keep applying, keep growing.</p>
+            </div>
+
+            <h1>
+                Build Your Career.<br>
+                <span>Get Placed.</span>
+            </h1>
+
+            <p>
+                Explore companies, placement drives and
+                job opportunities from one platform.
+            </p>
+
+            <div class="why-campusconnect">
+                <h3>Why CampusConnect?</h3>
+                <div class="why-grid">
+                    <a class="why-item" href="companies.html">
+                        <span class="why-icon company">🏢</span>
+                        <span class="why-copy">
+                            <strong>Top Companies</strong>
+                            <small>Explore hiring partners and leading recruiters.</small>
+                        </span>
+                    </a>
+                    <a class="why-item" href="drives.html">
+                        <span class="why-icon drive">📢</span>
+                        <span class="why-copy">
+                            <strong>Placement Drives</strong>
+                            <small>Join upcoming campus events and deadline-based drives.</small>
+                        </span>
+                    </a>
+                    <a class="why-item" href="applications.html">
+                        <span class="why-icon apps">📝</span>
+                        <span class="why-copy">
+                            <strong>Track Applications</strong>
+                            <small>Monitor status, interviews, and next steps in one place.</small>
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mini-stats-row">
+                <div class="mini-stat-card blue">
+                    <span class="mini-stat-icon">📄</span>
+                    <div>
+                        <strong>20</strong>
+                        <small>Applied</small>
+                    </div>
+                </div>
+                <div class="mini-stat-card purple">
+                    <span class="mini-stat-icon">✅</span>
+                    <div>
+                        <strong>12</strong>
+                        <small>Shortlisted</small>
+                    </div>
+                </div>
+                <div class="mini-stat-card orange">
+                    <span class="mini-stat-icon">🎤</span>
+                    <div>
+                        <strong>8</strong>
+                        <small>Interviews</small>
+                    </div>
+                </div>
+                <div class="mini-stat-card green">
+                    <span class="mini-stat-icon">🏆</span>
+                    <div>
+                        <strong>4</strong>
+                        <small>Selected</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-actions">
+                <p class="journey-prompt">Ready to start your placement journey?</p>
+
+                <div class="journey-cta">
+                    <div class="cta-text">
+                        <p>Find opportunities and take the next step towards your career.</p>
+                    </div>
+                    <button class="cta-btn" onclick="window.location.href='companies.html'">
+                        Explore Opportunities
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <aside class="journey-panel">
+            <div class="journey-panel-header">
+                <span class="journey-panel-icon">🚀</span>
+                <h3>Placement Journey</h3>
+            </div>
+
+            <div class="journey-list">
+                <div class="journey-step">
+                    <span class="step-icon success">✓</span>
+                    <span class="step-text">Complete Profile</span>
+                </div>
+                <div class="journey-step">
+                    <span class="step-icon success">✓</span>
+                    <span class="step-text">Explore Opportunities</span>
+                </div>
+                <div class="journey-step">
+                    <span class="step-icon success">✓</span>
+                    <span class="step-text">Apply for Placement Drives</span>
+                </div>
+                <div class="journey-step final-step">
+                    <span class="step-text final-text">Get Placed</span>
+                </div>
+            </div>
+        </aside>
+    </div>
+</section>
+
+
+
+
+<div id="dashboard-choice-modal" class="dashboard-choice-modal hidden" aria-live="polite">
+    <div class="dashboard-choice-box">
+        <h3>Select Dashboard</h3>
+        <p>Choose the dashboard you want to open.</p>
+        <div class="dashboard-choice-actions">
+            <button type="button" class="choice-btn student-choice" onclick="chooseDashboard('student')">Student Dashboard</button>
+            <button type="button" class="choice-btn admin-choice" onclick="chooseDashboard('admin')">Admin Dashboard</button>
+        </div>
+    </div>
+</div>
+
+<footer>
+    © 2026 CampusConnect | Student Placement Portal
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
